@@ -10,7 +10,7 @@ let correctGuesses = 0;
 let bestScore = 0;
 let clickMessage = "Click on a friend's image to gain points! Click on the same one twice and you lose!";
 
-class App extends Component{
+class App extends Component {
 
   state = {
     friends,
@@ -57,12 +57,11 @@ class App extends Component{
     // Shuffle the array to be rendered in a random order
     friends.sort(function(a, b){return 0.5 - Math.random()});
 
-    // Set this.state.matches equal to the new matches array
+    // Set this.state.friends equal to the new matches array
     this.setState({ friends });
     this.setState({correctGuesses});
     this.setState({clickMessage});
 } else {
-
   // Set its value to true
   clickedFriend[0].clicked = true;
 
@@ -81,7 +80,7 @@ class App extends Component{
   // Shuffle the array to be rendered in a random order
   friends.sort(function(a, b){return 0.5 - Math.random()});
 
-  // Set this.state.matches equal to the new matches array
+  // Set this.state.friends equal to the new matches array
   this.setState({ friends });
   this.setState({correctGuesses});
   this.setState({clickMessage});
@@ -104,7 +103,7 @@ class App extends Component{
           </h3>
           <div className="container">
           <div className="row">
-          {this.state.friends.map(friend => (
+          {friends.map(friend => (
               <ImageCard
                   imageClick={this.imageClick}
                   id={friend.id}

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/jakeokony1024/ClickyGame.git/static/css/main.6069df24.chunk.css",
-    "main.js": "/jakeokony1024/ClickyGame.git/static/js/main.756f9ae8.chunk.js",
-    "main.js.map": "/jakeokony1024/ClickyGame.git/static/js/main.756f9ae8.chunk.js.map",
-    "runtime-main.js": "/jakeokony1024/ClickyGame.git/static/js/runtime-main.6810d748.js",
-    "runtime-main.js.map": "/jakeokony1024/ClickyGame.git/static/js/runtime-main.6810d748.js.map",
-    "static/js/2.f4f4c7f6.chunk.js": "/jakeokony1024/ClickyGame.git/static/js/2.f4f4c7f6.chunk.js",
-    "static/js/2.f4f4c7f6.chunk.js.map": "/jakeokony1024/ClickyGame.git/static/js/2.f4f4c7f6.chunk.js.map",
-    "index.html": "/jakeokony1024/ClickyGame.git/index.html",
-    "precache-manifest.6467e3335103fa247719b3730a8fd373.js": "/jakeokony1024/ClickyGame.git/precache-manifest.6467e3335103fa247719b3730a8fd373.js",
-    "service-worker.js": "/jakeokony1024/ClickyGame.git/service-worker.js",
-    "static/css/main.6069df24.chunk.css.map": "/jakeokony1024/ClickyGame.git/static/css/main.6069df24.chunk.css.map",
-    "static/js/2.f4f4c7f6.chunk.js.LICENSE.txt": "/jakeokony1024/ClickyGame.git/static/js/2.f4f4c7f6.chunk.js.LICENSE.txt"
+    "main.css": "/ClickyGame/static/css/main.6069df24.chunk.css",
+    "main.js": "/ClickyGame/static/js/main.5c5cbc2b.chunk.js",
+    "main.js.map": "/ClickyGame/static/js/main.5c5cbc2b.chunk.js.map",
+    "runtime-main.js": "/ClickyGame/static/js/runtime-main.1d742c2c.js",
+    "runtime-main.js.map": "/ClickyGame/static/js/runtime-main.1d742c2c.js.map",
+    "static/js/2.f4f4c7f6.chunk.js": "/ClickyGame/static/js/2.f4f4c7f6.chunk.js",
+    "static/js/2.f4f4c7f6.chunk.js.map": "/ClickyGame/static/js/2.f4f4c7f6.chunk.js.map",
+    "index.html": "/ClickyGame/index.html",
+    "precache-manifest.9714365fecb5736e6dd5a9762f53ceba.js": "/ClickyGame/precache-manifest.9714365fecb5736e6dd5a9762f53ceba.js",
+    "service-worker.js": "/ClickyGame/service-worker.js",
+    "static/css/main.6069df24.chunk.css.map": "/ClickyGame/static/css/main.6069df24.chunk.css.map",
+    "static/js/2.f4f4c7f6.chunk.js.LICENSE.txt": "/ClickyGame/static/js/2.f4f4c7f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6810d748.js",
+    "static/js/runtime-main.1d742c2c.js",
     "static/js/2.f4f4c7f6.chunk.js",
     "static/css/main.6069df24.chunk.css",
-    "static/js/main.756f9ae8.chunk.js"
+    "static/js/main.5c5cbc2b.chunk.js"
   ]
 }

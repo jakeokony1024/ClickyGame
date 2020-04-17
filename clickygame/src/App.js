@@ -18,77 +18,8 @@ class App extends Component{
     bestScore,
     clickMessage
   }
-
   imageClick = id => {
     
-    const friends = this.state.friends;
-    const clickedFriend = friends.filter(friend => friend.id === id);
-    
-        if (clickedFriend[0].clicked) {
-
-          console.log ("Correct Guesses: " + correctGuesses);
-          console.log ("Best Score: " + bestScore);
-
-          correctGuesses = 0;
-          clickMessage = "Bummer! You already clicked on this one."
-
-          for (let i = 0 ; i < friends.length ; i++) {
-              friends[i].clicked = false;
-          }
-
-          this.setState({clickMessage});
-          this.setState({ correctGuesses });
-          this.setState({friends});
-        
-      } else if (correctGuesses < 11) {
-
-        // Set its value to true
-        clickedFriend[0].clicked = true;
-
-        // increment the appropriate counter
-        correctGuesses++;
-        
-        clickMessage = "Great! You haven't click on that one yet! Keep going!";
-
-        if (correctGuesses > bestScore) {
-            bestScore = correctGuesses;
-            this.setState({ bestScore });
-        }
-
-        // Shuffle the array to be rendered in a random order
-        friends.sort(function(a, b){return 0.5 - Math.random()});
-
-        // Set this.state.matches equal to the new matches array
-        this.setState({ friends });
-        this.setState({correctGuesses});
-        this.setState({clickMessage});
-    } else {
-
-      // Set its value to true
-      clickedFriend[0].clicked = true;
-
-      // restart the guess counter
-      correctGuesses = 0;
-
-      // Egg on the user to play again
-      clickMessage = "WOW!!! You got ALL of them!!! Now, let's see if you can do it again!";
-      bestScore = 12;
-      this.setState({ bestScore });
-      
-      for (let i = 0 ; i < friends.length ; i++){
-          friends[i].clicked = false;
-      }
-
-      // Shuffle the array to be rendered in a random order
-      friends.sort(function(a, b){return 0.5 - Math.random()});
-
-      // Set this.state.matches equal to the new matches array
-      this.setState({ friends });
-      this.setState({correctGuesses});
-      this.setState({clickMessage});
-
-  }
-
   }
   render() {
     return (

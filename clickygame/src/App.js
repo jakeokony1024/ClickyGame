@@ -19,7 +19,27 @@ class App extends Component{
     clickMessage
   }
   imageClick = id => {
+
+    const friends = this.state.friends;
+    const clickedFriend = friends.filter(friend => friend.id === id);
     
+    if (clickedFriend[0].clicked) {
+
+      console.log ("Correct Guesses: " + correctGuesses);
+      console.log ("Best Score: " + bestScore);
+
+      correctGuesses = 0;
+      clickMessage = "Bummer! You already clicked on this one."
+
+      for (let i = 0 ; i < friends.length ; i++) {
+          friends[i].clicked = false;
+      }
+
+      this.setState({clickMessage});
+      this.setState({ correctGuesses });
+      this.setState({friends});
+    
+  }
   }
   render() {
     return (

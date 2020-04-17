@@ -22,7 +22,7 @@ class App extends Component{
 
     const friends = this.state.friends;
     const clickedFriend = friends.filter(friend => friend.id === id);
-    
+
     if (clickedFriend[0].clicked) {
 
       console.log ("Correct Guesses: " + correctGuesses);
@@ -39,7 +39,29 @@ class App extends Component{
       this.setState({ correctGuesses });
       this.setState({friends});
     
-  }
+  } else if (correctGuesses < 11) {
+
+    // Set its value to true
+    clickedFriend[0].clicked = true;
+
+    // increment the appropriate counter
+    correctGuesses++;
+    
+    clickMessage = "Great! You haven't click on that one yet! Keep going!";
+
+    if (correctGuesses > bestScore) {
+        bestScore = correctGuesses;
+        this.setState({ bestScore });
+    }
+
+    // Shuffle the array to be rendered in a random order
+    friends.sort(function(a, b){return 0.5 - Math.random()});
+
+    // Set this.state.matches equal to the new matches array
+    this.setState({ friends });
+    this.setState({correctGuesses});
+    this.setState({clickMessage});
+}
   }
   render() {
     return (

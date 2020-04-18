@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Container from './components/Container'
 import ImageCard from './components/ImageCard'
-// import ImgContainer from './components/ImgContainer'
 import Title from './components/Title'
 import friends from './friends.json'
 import './App.css';
+
 
 let correctGuesses = 0;
 let bestScore = 0;
@@ -29,7 +29,7 @@ class App extends Component {
       console.log ("Best Score: " + bestScore);
 
       correctGuesses = 0;
-      clickMessage = "Bummer! You already clicked on this one."
+      clickMessage = alert("Bummer! You already clicked on this one.")
 
       for (let i = 0 ; i < friends.length ; i++) {
           friends[i].clicked = false;
@@ -54,6 +54,8 @@ class App extends Component {
         this.setState({ bestScore });
     }
 
+
+
     // Shuffle the array to be rendered in a random order
     friends.sort(function(a, b){return 0.5 - Math.random()});
 
@@ -69,7 +71,7 @@ class App extends Component {
   correctGuesses = 0;
 
   // Egg on the user to play again
-  clickMessage = "WOW!!! You got ALL of them!!! Now, let's see if you can do it again!";
+  clickMessage = alert("WOW!!! You got ALL of them!!! Now, let's see if you can do it again!");
   bestScore = 12;
   this.setState({ bestScore });
   
